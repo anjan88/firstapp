@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Circular Navigation</title>
+		<meta name="description" content="Circular Navigation Styles - Building a Circular Navigation with CSS Transforms | Codrops " />
+		<meta name="keywords" content="css transforms, circular navigation, round navigation, circular menu, tutorial" />
+		<meta name="author" content="Sara Soueidan for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/component1.css" />
+		<script src="../static/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href=""><span>Previous</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://localhost:63342/webproject/templates/index2.html"><span>Next</span></a></span>
+			</div>
+			<header>
+				<h1>Circular Navigation <span>Building a Circular Navigation with a Django Framework</span></h1>
+				<nav class="codrops-demos">
+					<a class="current-demo" href="index.html">Django Instructions</a>
+					<a href="http://localhost:63342/webproject/templates/index2.html">Click & Discover</a>
+					<a href="interactivedemo/index.html">Intractive Demo</a>
+				</nav>
+			</header>
+			<section>
+                Being a Python Web framework, Django requires Python.</p>
+                <p>It works with any Python version from 2.6 to 2.7 (due to backwards incompatibilities in Python 3.0, Django does not
+                   currently work with Python 3.0; see the Django FAQ for more information on supported Python versions and the 3.0
+                   transition). Get Python at http://www.python.org. If you’re running Linux or Mac OS X, you probably already have it installed.</p>
+                <br>
+                Python on Windows</p>
+                <p>On Windows, you might need to adjust your PATH environment variable to include paths to Python executable and
+                   additional scripts. For example, if your Python is installed in C:\Python27\, the following paths need to be added
+                   to PATH: C:\Python27\;C:\Python27\Scripts;</p>
+                <br>
+                3.1.5 Install the Django code</p>
+                <p>Installation instructions are slightly different depending on whether you’re installing a distribution-specific package,
+                   downloading the latest official release, or fetching the latest development version. It’s easy, no matter which way you choose.</p>
+                <br>
+                Installing a distribution-specific package</p>
+                <p>Check the distribution specific notes to see if your platform/distribution provides official Django packages/installers.
+                Distribution-provided packages will typically allow for automatic installation of dependencies and easy upgrade paths.</p>
+                <br>
+                Installing an official release with pip</p>
+                <p>This is the recommended way to install Django.</p>
+                <p>1. Install pip. The easiest is to use the standalone pip installer. If your distribution already has pip installed, you
+                      might need to update it if it’s outdated. (If it’s outdated, you’ll know because installation won’t work.)
+                   2. (optional) Take a look at virtualenv and virtualenvwrapper. These tools provide isolated Python environments,
+                      which are more practical than installing packages systemwide. They also allow installing packages without
+                      administrator privileges. It’s up to you to decide if you want to learn and use them.
+                   3. If you’re using Linux, Mac OS X or some other flavor of Unix, enter the command sudo pip install
+                      Django at the shell prompt. If you’re using Windows, start a command shell with administrator privileges and run the command pip install Django.
+                      This will install Django in your Python installation’s site-packages directory.
+                      If you’re using a virtualenv, you don’t need sudo or administrator privileges, and this will install Django in the
+                      virtualenv’s site-packages directory</p>
+			</section>
+			<div class="component">
+				<!-- Start Nav Structure -->
+				<button class="cn-button" id="cn-button">+</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+				    <ul>
+				      <li><a href="#"><span class="icon-picture"></span></a></li>
+				      <li><a href="#"><span class="icon-headphones"></span></a></li>
+				      <li><a href="http://localhost:63342/webproject/templates/index.html"><span class="icon-home"></span></a></li>
+				      <li><a href="#"><span class="icon-facetime-video"></span></a></li>
+				      <li><a href="http://127.0.0.1:8000/mail/"><span class="icon-envelope-alt"></span></a></li>
+				     </ul>
+				</div>
+				<div id="cn-overlay" class="cn-overlay"></div>
+				<!-- End Nav Structure -->
+			</div>
+		</div><!-- /container -->
+		<script src="../static/js/polyfills.js"></script>
+		<script src="../static/js/demo1.js"></script>
+
+	</body>
+</html>
