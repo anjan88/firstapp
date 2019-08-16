@@ -15,7 +15,7 @@ def view1(request):
 #view2
 def view2(request):
     today = datetime.datetime.now().date()
-    return render(request,"datetime.html",{"TODAY":today})
+    return render(request, "datetime.html", {"TODAY":today})
 
 #view3
 def view3(request):
@@ -25,7 +25,7 @@ def view3(request):
 #view4
 def view4(request):
     li=['apple','orange','grape']
-    return render(request,"fruits.html",{"FRUITS":li})
+    return render(request, "fruits.html", {"FRUITS":li})
 
 #view5
 def view5(request):
@@ -73,7 +73,7 @@ def view7(request):
                res = "Login Failed"
             except usr == "" or psw == " ":
                res = "Login Failed"
-    return render(request,"logpass.html",{"RESULT": res})
+    return render(request, "logpass.html", {"RESULT": res})
 
 #view8
 def form_name_view8(request):
@@ -83,7 +83,7 @@ def form_name_view8(request):
         print('name='+form.cleaned_data['name'])
         print('Email='+form.cleaned_data['email'])
         print('text='+form.cleaned_data['text'])
-    return render(request,"form_page.html",{"FORM":form})
+    return render(request, "form_page.html", {"FORM":form})
 
 #view8
 def post_form_upload(request):
@@ -103,12 +103,12 @@ def post_form_upload(request):
 
             else:
                 obj4 = PostForm(initial={'user:name'})
-    return render(request,"display.html",{"TABLE":li})
+    return render(request, "display.html", {"TABLE":li})
 
 #view9 (models) dont forget to add this in --> "admin.py" --> admin.site.register()
 def employee_record(request):
     userlist = Employee.objects.order_by('eno')
-    return render(request,'employee.html',{"EMPLOYEE":userlist})
+    return render(request, 'employee.html', {"EMPLOYEE":userlist})
 
 #view10 (forms)
 def insertemployee(request):
@@ -124,7 +124,7 @@ def insertemployee(request):
 
 def home(request):
     documents = Document.objects.all()
-    return render(request,"home.html",{'documents':documents})
+    return render(request, "home.html", {'documents':documents})
 
 def model_form_upload(request):
 
@@ -149,9 +149,9 @@ def send_email(request):
                 msg = "Mail sent Successfuly"
             else:
                 msg = "Mail could not sent"
-    return render(request,"confirmationpage.html",{"MSG":msg})
+    return render(request, "confirmationpage.html", {"MSG":msg})
 
 #view12
 def circular_nav(request):
-    return redirect("http://localhost:63342/webproject/templates/index.html?_ijt=1u9tsg58kgg19a8kfpfkpkc4ru")
+    return render(request, 'index.html')
 
