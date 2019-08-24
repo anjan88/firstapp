@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
@@ -8,11 +10,11 @@
 		<meta name="description" content="Circular Navigation Styles - Building a Circular Navigation with CSS Transforms | Codrops " />
 		<meta name="keywords" content="css transforms, circular navigation, round navigation, circular menu, tutorial" />
 		<meta name="author" content="Sara Soueidan for Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="../static/css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="../static/css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="../static/css/component2.css" />
-		<script src="../static/js/modernizr-2.6.2.min.js"></script>
+		<link rel="shortcut icon" href="{% static '/favicon.ico'%} ">
+		<link rel="stylesheet" type="text/css" href="{% static '/css/normalize.css'%}" />
+		<link rel="stylesheet" type="text/css" href="{% static '/css/demo.css'%}" />
+		<link rel="stylesheet" type="text/css" href="{% static '/css/component2.css'%}" />
+		<script src="{% static '/js/modernizr-2.6.2.min.js'%}"></script>
 
 
 
@@ -28,7 +30,7 @@
 				<h1>Circular Navigation <span>Building a Circular Navigation with a Django Framework</span></h1>
 				<nav class="codrops-demos">
 					<a href="http://127.0.0.1:8000/circularnavigation/">Django Instructions</a>
-					<a class="current-demo" href="index2.html">Click & Discover</a>
+					<a class="current-demo" href="http://127.0.0.1:8000/circularnavigation1/">Click & Discover</a>
 					<a href="interactivedemo/index.html">Comming Soon</a>
 				</nav>
 			</header>
@@ -147,7 +149,7 @@
                sql_mode. Consult the MySQLdb documentation for more details.</p>
             </section>
 		</div><!-- /container -->
-		<script src="../static/js/polyfills.js"></script>
-		<script src="../static/js/demo2.js"></script>
+		<script src="{% static '/js/polyfills.js'%}"></script>
+		<script src="{% static '/js/demo2.js'%}"></script>
 	</body>
 </html>

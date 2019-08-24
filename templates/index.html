@@ -1,5 +1,4 @@
 {% load static %}
-{% get_static_prefix as STATIC_PREFIX %}
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -23,13 +22,13 @@
 			<!-- Top Navigation -->
 			<div class="codrops-top clearfix">
 				<a class="codrops-icon codrops-icon-prev" href="http://127.0.0.1:8000/circularnavigation/"><span>Previous</span></a>
-				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://localhost:63342/webproject/templates/index2.html"><span>Next</span></a></span>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://127.0.0.1:8000/circularnavigation1/"><span>Next</span></a></span>
 			</div>
 			<header>
 				<h1>Circular Navigation <span>Building a Circular Navigation with a Django Framework</span></h1>
 				<nav class="codrops-demos">
 					<a class="current-demo" href="http://127.0.0.1:8000/circularnavigation/">Django Instructions</a>
-					<a href="http://localhost:63342/webproject/templates/index2.html">Click & Discover</a>
+					<a href="http://127.0.0.1:8000/circularnavigation1/">Click & Discover</a>
 					<a href="interactivedemo/index.html">Comming Soon</a>
 				</nav>
 			</header>
@@ -84,8 +83,8 @@
 				<!-- End Nav Structure -->
 			</div>
 		</div><!-- /container -->
-		<script src="{% static '/js/polyfills.js'%}"></script>
-		<script src="{% static '/js/demo1.js'%}"></script>
+		<script src="{% static '/js/polyfills.js/'%}"></script>
+		<script src="{% static '/js/demo1.js/'%}"></script>
 
 	</body>
 </html>

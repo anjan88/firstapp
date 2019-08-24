@@ -16,13 +16,14 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from anjanapp.views import view1,view2,view3,view4,view5,view6,view7,form_name_view8, post_form_upload
-from anjanapp.views import employee_record,insertemployee,model_form_upload,home,send_email,circular_nav
+from anjanapp.views import employee_record,insertemployee,model_form_upload,home,send_email,circular_nav,circular_nav1
 from django.views.generic import TemplateView
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^circularnavigation/',circular_nav,name='circular_nav'),
+    url(r'^circularnavigation1/', circular_nav1, name='circular_nav1'),
     url(r'^hello/', view1 ,name="view1"),
     url(r'^datetime/', view2 ,name="view2"),
     url(r'^redirect/', view3 ,name="view3"),

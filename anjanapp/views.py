@@ -155,4 +155,6 @@ def send_email(request):
 def circular_nav(request):
     return render(request, 'index.html')
 
-#hey
+#view13
+def circular_nav1(request):
+    return render(request, 'index2.html')
